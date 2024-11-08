@@ -1,0 +1,30 @@
+/* this container includes our table and our canvas.*/
+.center-container {
+    width: 608px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden; /* this hide outer border on table */
+}
+
+td {
+    cursor: pointer;
+    border: 4px solid green;
+    padding: 0px;
+    width: 200px;
+    height: 200px;
+    filter: contrast(3);
+}
+
+canvas {
+    position: absolute;
+    z-index: 10; /* this is making our canvas over top of our table */
+    pointer-events: none; /* this is make our canvas invisible */
+}
+
+h1 {
+    text-align: center;
+}
